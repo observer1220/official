@@ -1,83 +1,56 @@
-# Howl's Moving Castle Website
+### Design
 
-This project is a Next.js application built with TypeScript, inspired by the theme of Hayao Miyazaki's "Howl's Moving Castle." The website features a clean and whimsical design, reflecting the enchanting world of the film.
-
-## Project Structure
-
-The project is organized as follows:
-
-```
-howls-moving-castle-website
-├── src
-│   ├── components
-│   │   ├── Layout
-│   │   │   ├── Header.tsx       # Navigation menu component
-│   │   │   ├── Footer.tsx       # Footer component
-│   │   │   └── Layout.tsx       # Main layout component
-│   │   ├── ui
-│   │   │   ├── Button.tsx       # Reusable button component
-│   │   │   └── Card.tsx         # Card component for displaying content
-│   │   └── Home
-│   │       └── Hero.tsx         # Hero component for the homepage
-│   ├── pages
-│   │   ├── index.tsx            # Homepage
-│   │   ├── projects.tsx         # Projects template page
-│   │   ├── articles
-│   │   │   ├── index.tsx        # Articles list page
-│   │   │   └── [slug].tsx       # Dynamic article page
-│   │   └── services.tsx         # Services page
-│   ├── styles
-│   │   ├── globals.css          # Global CSS styles
-│   │   └── theme.ts             # Theme colors and styles
-│   ├── utils
-│   │   └── helpers.ts           # Utility functions
-│   └── types
-│       └── index.ts             # TypeScript types and interfaces
-├── public
-│   └── images
-│       └── logo.svg             # Logo image
-├── package.json                  # npm configuration file
-├── tsconfig.json                 # TypeScript configuration file
-├── next.config.js                # Next.js configuration file
-└── README.md                     # Project documentation
-```
-
-## Features
-
-- **Responsive Design**: The website is designed to be fully responsive, ensuring a great user experience on all devices.
-- **Dynamic Routing**: The articles page supports dynamic routing, allowing users to navigate to specific articles.
-- **Reusable Components**: The project utilizes reusable components for buttons and cards, promoting code efficiency and maintainability.
-
-## Getting Started
-
-To get started with the project, follow these steps:
-
-1. Clone the repository:
-   ```
-   git clone https://github.com/yourusername/howls-moving-castle-website.git
-   ```
-
-2. Navigate to the project directory:
-   ```
-   cd howls-moving-castle-website
-   ```
-
-3. Install the dependencies:
-   ```
-   npm install
-   ```
-
-4. Run the development server:
-   ```
-   npm run dev
-   ```
-
-5. Open your browser and visit `http://localhost:3000` to see the website in action.
-
-## Contributing
-
-Contributions are welcome! If you have suggestions for improvements or new features, feel free to open an issue or submit a pull request.
-
-## License
-
-This project is licensed under the MIT License. See the LICENSE file for more details.
+1. 首頁動態效果
+   視差滾動（Parallax Scrolling）
+   在首頁背景加入視差效果，例如背景圖片或圖案以不同速度滾動，營造深度感。可以展現你的服務特色，例如形象網站用優雅的圖片，購物車用產品展示的動態效果。
+   打字機效果（Typing Animation）
+   在標題或標語部分加入打字機效果，例如：“打造您的專屬形象網站 | 購物車網站 | 中英文翻譯 | 音檔逐字稿”，讓文字逐一顯示，吸引用戶注意力。
+   動態粒子背景（Particle Effects）
+   使用輕量級的粒子動畫作為背景，既現代又有科技感，適合軟體工程師的身份。
+2. 服務展示區
+   卡片翻轉效果（Card Flip Animation）
+   將每個服務設計成卡片形式（圖像網站、購物車網站等），滑鼠懸停時卡片翻轉，背面顯示服務詳情或範例。這種互動性既直觀又有趣。
+   滑動進入（Slide-In Animation）
+   當使用者捲動到服務區時，每個服務模組從左右或上下緩慢滑入，搭配淡入效果（Fade-In），增加流暢感。
+   微交互（Micro-Interactions）
+   在服務按鈕（如「了解更多」）上加入懸停動畫，例如色彩漸層、放大或輕微抖動，提升使用者體驗。
+3. 視覺化作品集
+   輪播圖（Carousel/Slider）
+   為形象網站和購物車網站服務設計一個動態輪播展示，放入你過去的專案截圖或模擬效果，使用者可以手動切換或自動播放。
+   懸浮放大（Hover Zoom）
+   展示作品時，滑鼠懸停在圖片上時放大並顯示簡短描述，既直觀又吸引眼球。
+   時間軸動畫（Timeline Animation）
+   如果有翻譯或逐字稿案例，可以用動態時間軸展示工作流程（例如「上傳音訊 → 處理中 → 完成逐字稿」），讓客戶一目了然。
+4. CTA（號召行動）按鈕
+   呼吸動畫（Breathing Animation）
+   在「聯絡我」或「取得報價」按鈕上加入輕微的放大縮小效果，像呼吸一樣，既不突兀又能吸引點擊。
+   載入動畫（Loading Animation）
+   如果有表單提交功能（例如諮詢或上傳音檔），提交後顯示一個簡潔的載入動畫（例如旋轉圓圈或進度條），提升專業感。
+5. 多語言切換與翻譯服務亮點
+   動態語言切換
+   既然你提供中英文翻譯服務，可以在網站頂部加入語言切換按鈕，點擊時用平滑動畫（例如淡入淡出）切換內容，展示你的翻譯能力。
+   即時翻譯預覽
+   設計一個小互動區域，使用者輸入短句後，網站即時顯示中英文翻譯結果（可以用簡單的 API 或預設內容），既展示技術能力又吸引客戶。
+6. 音檔逐字服務特色
+   音訊波形動畫（Audio Waveform）
+   在介紹音檔逐字稿服務時，加入動態音訊波形效果，隨著頁面捲動或滑鼠互動而變化，突顯音訊處理的主題。
+   上傳演示動畫
+   模擬一個文件上傳的動態過程（例如拖曳文件後顯示進度條），讓客戶直覺感受到服務的便利性。
+7. 技術實現建議
+   CSS 動畫
+   使用 CSS @keyframes 和 transition 實現簡單的淡入、滑動、放大效果，性能好且易於維護。
+   JavaScript 函式庫
+   GSAP（GreenSock Animation Platform）：適合複雜動畫，流暢且輕量。
+   AOS（Animate on Scroll）：簡單實現滾動觸發的動畫。
+   Three.js：如果想加入 3D 效果或粒子背景，可以試試。
+   框架選擇
+   如果你用 React/Vue 等前端框架，可以結合組件化的方式，讓動畫更模組化。
+8. 注意事項
+   保持簡潔：動態效果要適度，避免過多動畫導致頁面載入慢或分散注意力。
+   響應式設計：確保動畫在手機、平板等裝置上也能流暢顯示。
+   載入優化：壓縮圖片和腳本，使用 CDN 加速，保持網站速度。
+   範例結構
+   首頁：粒子背景 + 打字機標語
+   服務區：卡片翻轉 + 滑動進入
+   作品集：輪播圖 + 懸浮放大
+   聯絡區：呼吸按鈕 + 表單載入動畫
