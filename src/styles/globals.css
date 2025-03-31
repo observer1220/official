@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff; /* Light blue background */
+    color: #333; /* Dark text color */
+}
+
+header {
+    background-color: #8b4513; /* SaddleBrown for the header */
+    padding: 1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    color: #fff; /* White text for links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #8b4513; /* SaddleBrown for the footer */
+    color: #fff; /* White text for footer */
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+h1, h2, h3 {
+    color: #2e8b57; /* SeaGreen for headings */
+}
+
+p {
+    line-height: 1.6;
+}

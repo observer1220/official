@@ -1,0 +1,30 @@
+{
+  "name": "howls-moving-castle-website",
+  "version": "1.0.0",
+  "description": "A website inspired by Hayao Miyazaki's Howl's Moving Castle.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "keywords": [
+    "nextjs",
+    "typescript",
+    "howls-moving-castle"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "styled-components": "^6.1.16",
+    "typescript": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "22.13.14",
+    "@types/react": "latest",
+    "@types/react-dom": "latest"
+  }
+}
