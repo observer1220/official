@@ -6,7 +6,7 @@ const FooterContainer = styled.footer`
   color: #ffffff;
   padding: 20px;
   text-align: center;
-  width: 100%;
+  /* width: 100%; */
   position: fixed;
   bottom: 0;
   left: 0;
@@ -16,8 +16,7 @@ const FooterContainer = styled.footer`
 const Footer: React.FC = () => {
   return (
     <FooterContainer>
-      <p>© {new Date().getFullYear()} 霍爾的移動城堡網站. 版權所有.</p>
-      <p>隱私政策 | 使用條款</p>
+      <p>© {new Date().getFullYear()} 箴雅數位工作室</p>
     </FooterContainer>
   );
 };

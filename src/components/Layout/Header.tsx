@@ -1,6 +1,8 @@
 import React from "react";
 import Link from "next/link";
 import styled from "styled-components";
+import smile from "public/images/smile.png";
+import Image from "next/image";
 
 const HeaderContainer = styled.header`
   display: flex;
@@ -13,6 +15,18 @@ const HeaderContainer = styled.header`
 const Logo = styled.div`
   font-size: 1.5rem;
   font-weight: bold;
+  a {
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    align-items: center;
+
+    img {
+      margin-right: 0.5rem;
+      width: 50px; /* Adjust size as needed */
+      height: 50px; /* Adjust size as needed */
+    }
+  }
 `;
 
 const Nav = styled.nav`
@@ -45,21 +59,21 @@ const Header: React.FC = () => {
   return (
     <HeaderContainer>
       <Logo>
-        <Link href="/">Howl's Moving Castle</Link>
+        <Link href="/">
+          <Image src={smile} alt="Logo" width={50} height={50} />
+          箴雅數位工作室
+        </Link>
       </Logo>
       <Nav>
         <NavList>
           <li>
-            <Link href="/">首頁</Link>
+            <Link href="/services">服務項目</Link>
           </li>
           <li>
-            <Link href="/projects">專案範本</Link>
+            <Link href="/projects">專案作品</Link>
           </li>
           <li>
             <Link href="/articles">文章</Link>
-          </li>
-          <li>
-            <Link href="/services">服務項目</Link>
           </li>
         </NavList>
       </Nav>

@@ -32,7 +32,8 @@ const TypingText = styled.h1`
   overflow: hidden;
   border-right: 2px solid #fff;
   width: 0;
-  animation: ${typing} 4s steps(40, end), ${blink} 0.5s step-end infinite;
+  animation: ${typing} 4s steps(40, end), ${blink} 0.5s step-end infinite; // 打字機效果
+  animation-fill-mode: forwards;
 `;
 
 // 粒子背景容器
@@ -49,7 +50,7 @@ const ParticleBackground = styled.div`
   }
 `;
 
-const Hero: React.FC = () => {
+const Banner: React.FC = () => {
   const [offsetY, setOffsetY] = useState(0);
 
   useEffect(() => {
@@ -110,13 +111,13 @@ const Hero: React.FC = () => {
   }, []);
 
   return (
-    <ParallaxContainer offsetY={offsetY}>
-      <ParticleBackground />
-      <TypingText>
-        打造您的專屬形象網站 | 購物車網站 | 中英文翻譯 | 音檔逐字稿
-      </TypingText>
-    </ParallaxContainer>
+    // <ParallaxContainer offsetY={offsetY}>
+    //   <ParticleBackground />
+    <TypingText>
+      打造您的專屬形象網站 | 購物車網站 | 中英文翻譯 | 音檔逐字稿 //{" "}
+    </TypingText>
+    // </ParallaxContainer>
   );
 };
 
-export default Hero;
+export default Banner;
