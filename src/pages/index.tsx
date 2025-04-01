@@ -4,7 +4,6 @@ import Banner from "../components/Home/Banner";
 import Head from "next/head";
 
 const Home: React.FC = () => {
-  // Banner 動態特效
   // 網站上線時間: 會動的數字
   // 開放接案的日期: 會動的數字
   return (
